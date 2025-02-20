@@ -104,7 +104,7 @@ const userCtrl = {
                  return res.json({msg:"log out"})
         }
         catch(err){
-              
+               return res.status(500).json({msg:err.message});
         }
     },
     getUser: async(req,res) => {
@@ -114,7 +114,7 @@ const userCtrl = {
              res.json(user);
         }
         catch(err){
-
+                   return res.status(500).json({msg:err.message});
         }
     }
 }
