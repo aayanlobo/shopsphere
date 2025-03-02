@@ -25,7 +25,7 @@ mongoose
 
 // ✅ Define Routes After Database Connection
 app.use('/user', require('./routes/userRouter'));
-
+app.use('/api', require('./routes/categoryRouter'));
 // ✅ Test API Route
 app.get('/', (req, res) => {
   res.json({ msg: "This is an example" });
