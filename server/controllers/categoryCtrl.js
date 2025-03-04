@@ -1,6 +1,6 @@
 const categoryCtrl = {
      getCategories : async(req,res) => {
-        res.json('Category Test Control')
+        res.json('Category Test Controls')
      }
 }
 
