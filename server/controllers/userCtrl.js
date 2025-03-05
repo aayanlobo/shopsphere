@@ -123,7 +123,7 @@ const createAccessToken = (payLoad) => {
 }
 
 const createRefreshToken = (payLoad) => {
-    return jwt.sign(payLoad,process.env.REFRESH_TOKEN_SECRET,{expiresIn:'7d'})
+    return jwt.sign(payLoad,process.env.REFRESH_TOKEN_SECRET,{expiresIn:'1d'})
 }
 
 module.exports = userCtrl;
